@@ -1,0 +1,10 @@
+/* Custom CSS by dev */
+.BlrTxt-Div1{
+
+}
+.BlrTxt-Fnt1{
+    font-family: "BBH Bartle", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: clamp(20px,2.5vw,30px);
+}

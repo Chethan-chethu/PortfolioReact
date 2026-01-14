@@ -1,5 +1,7 @@
 import GlareHover from "./GlareHover";
 
+import DecryptedTextWrap from "../DecryptedTextComponents/DecryptedTextWrap";
+
 const GlareHoverWrap = () => {
   return (
     <div style={{ height: "600px", position: "relative" }}>
@@ -24,16 +26,28 @@ const GlareHoverWrap = () => {
         <table className="GlHvr-Tab">
           <tbody>
             <tr>
-              <td>Ph No</td>
-              <td>8310450168</td>
+              <td>
+                <DecryptedTextWrap displayText="Ph No" />
+              </td>
+              <td>
+                <DecryptedTextWrap displayText="8310450168" />
+              </td>
             </tr>
             <tr>
-              <td>Email</td>
-              <td>chethanramesh16@gmail.com</td>
+              <td>
+                <DecryptedTextWrap displayText="Email" />
+              </td>
+              <td>
+                <DecryptedTextWrap displayText="chethanramesh16@gmail.com" />
+              </td>
             </tr>
             <tr>
-              <td>Website</td>
-              <td>Link</td>
+              <td>
+                <DecryptedTextWrap displayText="Website" />
+              </td>
+              <td>
+                <DecryptedTextWrap displayText="Link" />
+              </td>
             </tr>
           </tbody>
         </table>

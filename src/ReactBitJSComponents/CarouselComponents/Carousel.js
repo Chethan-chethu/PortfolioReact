@@ -9,38 +9,59 @@ import {
   FiLayout,
 } from "react-icons/fi";
 
+import SkillLevel from "../../CustomComponents/SkillLevelComponents/SkillLevel";
+
+import css from "../../assets/images/css.png";
+import html from "../../assets/images/html.png";
+import java from "../../assets/images/java.png";
+import js from "../../assets/images/js.png";
+import node from "../../assets/images/node.png";
+import react from "../../assets/images/react.png";
+
 import "./Carousel.css";
 
 const DEFAULT_ITEMS = [
   {
-    title: "Text Animations",
+    title: "CSS",
     description: "Cool text animations for your projects.",
     id: 1,
-    icon: <FiFileText className="carousel-icon" />,
+    icon: <img src={css} alt="css" className="carousel-icon" />,
+    rating: 4,
   },
   {
-    title: "Animations",
+    title: "HTML",
     description: "Smooth animations for your projects.",
     id: 2,
-    icon: <FiCircle className="carousel-icon" />,
+    icon: <img src={html} alt="html" className="carousel-icon" />,
+    rating: 4,
   },
   {
-    title: "Components",
+    title: "JAVA",
     description: "Reusable components for your projects.",
     id: 3,
-    icon: <FiLayers className="carousel-icon" />,
+    icon: <img src={java} alt="java" className="carousel-icon" />,
+    rating: 4,
   },
   {
-    title: "Backgrounds",
+    title: "JAVASCRIPT",
     description: "Beautiful backgrounds and patterns for your projects.",
     id: 4,
-    icon: <FiLayout className="carousel-icon" />,
+    icon: <img src={js} alt="js" className="carousel-icon" />,
+    rating: 4,
   },
   {
-    title: "Common UI",
+    title: "NODE",
     description: "Common UI components are coming soon!",
     id: 5,
-    icon: <FiCode className="carousel-icon" />,
+    icon: <img src={node} alt="node" className="carousel-icon" />,
+    rating: 3,
+  },
+  {
+    title: "REACT",
+    description: "Common UI components are coming soon!",
+    id: 5,
+    icon: <img src={react} alt="react" className="carousel-icon" />,
+    rating: 4,
   },
 ];
 
@@ -83,7 +104,9 @@ function CarouselItem({
       </div>
       <div className="carousel-item-content">
         <div className="carousel-item-title">{item.title}</div>
-        <p className="carousel-item-description">{item.description}</p>
+        <p className="carousel-item-description">
+          <SkillLevel level={item.rating} />
+        </p>
       </div>
     </motion.div>
   );

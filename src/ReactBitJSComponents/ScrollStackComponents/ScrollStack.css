@@ -59,3 +59,10 @@
     height: 30rem;
     background: white;
 }
+
+.scroll-stack-inner{
+    padding-top:0;
+    padding-left: 0;
+    position: relative;
+        top: -20%;
+}

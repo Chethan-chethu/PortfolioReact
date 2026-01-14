@@ -6,6 +6,7 @@ import StepperWrap from "../StepperComponents/StepperWrap";
 import CarouselWrap from "../CarouselComponents/CarouselWrap";
 import ScrollStackWrap from "../ScrollStackComponents/ScrollStackWrap";
 import GlareHoverWrap from "../GlareHoverComponents/GlareHoverWrap";
+import AnimatedListWrap from "../AnimatedListComponents/AnimatedListWrap";
 
 const DEFAULT_PARTICLE_COUNT = 12;
 const DEFAULT_SPOTLIGHT_RADIUS = 300;
@@ -25,6 +26,7 @@ const cardData = [
     title: "Dashboard",
     description: "Centralized data view",
     label: "Overview",
+    cmp: AnimatedListWrap,
   },
   {
     color: "#060010",
